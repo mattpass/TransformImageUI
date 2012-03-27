@@ -1,0 +1,182 @@
+body {
+	margin: 0px;
+	font-size: 12px;
+	font-family: arial, helvetica, swiss, verdana;
+	overflow: hidden;
+}
+
+.tImageContainer {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+}
+
+.tImageContainer .tImage {
+	-webkit-transition: all 0s ease-in-out;
+	-Moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+
+.tImageMenuContainer {
+	position: absolute;
+	display: block;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: 0px;
+	-webkit-opacity:0;
+	-Moz-opacity:0;
+	-o-opacity:0;
+	opacity:0;
+}
+
+.tImageMenuContainer .tImageTransMenuBG {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	margin-left: -140px;
+	margin-top: -41px;
+	width: 280px;
+	height: 82px;
+	background-color: #000000;
+	-webkit-opacity:0.5;
+	-Moz-opacity:0.5;
+	-o-opacity:0.5;
+	opacity:0.5;
+	z-index: 2;
+}
+
+.tImageMenuContainer .tImageTransMenu {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%; 
+	margin-left: -140px;
+	margin-top: -41px;
+	width: 280px;
+	height: 82px;
+	z-index: 2;
+}
+
+.tImageTransMenu .tImageIconContainer {
+	position: relative;
+	top: 10px;
+}
+
+.tImageIconContainer .tImageCrop {
+	margin-bottom: 6px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.tImageIconContainer .tImageScale {
+	margin-bottom: 6px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.tImageIconContainer .tImageRotate {
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.tImageIconContainer .tImageFlipHorizontal {
+	margin-bottom: 13px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.tImageIconContainer .tImageFlipVertical {
+	margin-bottom: 0px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.tImageTransMenuDataBG {
+	position: absolute;
+	display: block;
+	left: 50%;
+	margin-left: -140px;
+	top: 50%;
+	margin-top: 41px;
+	width: 280px;
+	height: 24px;
+	background-color: #000000;
+	-webkit-opacity:0.8;
+	-Moz-opacity:0.8;
+	-o-opacity:0.8;
+	opacity:0.8;
+	z-index: 2;
+	color: #ffffff;
+	padding-top: 6px;
+}
+
+.tImageMessageContainer {
+	position: absolute;
+	display: block;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: 0px;
+	-webkit-opacity:0;
+	-Moz-opacity:0;
+	-o-opacity:0;
+	opacity:0;
+}
+
+.tImageMessageContainer .tImageTransMessageBG {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	margin-left: -140px;
+	margin-top: -18px;
+	width: 280px;
+	height: 36px;
+	background-color: #000000;
+	-webkit-opacity:0.8;
+	-Moz-opacity:0.8;
+	-o-opacity:0.8;
+	opacity:0.8;
+	z-index: 3;
+}
+
+.tImageMessageContainer .tImageTransMessage {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%; 
+	margin-left: -150px;
+	margin-top: -18px;
+	width: 280px;
+	height: 36px;
+	z-index: 3;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.tImageFormContainer {
+	position: absolute;
+	display: block;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+	margin-top: 0px;
+}
+
+.tImageFormContainer .tImageFormDataDisplay {
+	background-color: #000000;
+	-webkit-opacity:0.8;
+	-Moz-opacity:0.8;
+	-o-opacity:0.8;
+	opacity:0.8;
+	color: #ffffff;
+	padding: 5px;
+}

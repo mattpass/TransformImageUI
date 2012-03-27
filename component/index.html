@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Transform Image UI</title>
+<link rel="STYLESHEET" type="text/css" href="website.css">
+<script src="transform-image.js"></script>
+</head>
+
+<body>
+
+<span class="tImageMenuContainer" id="tImageMenuContainer" onMouseOver="tImageShowIcons()" onMouseOut="tImageHideIcons()">
+	<span class="tImageTransMenuBG"></span>
+	<span class="tImageTransMenu">
+		<span class="tImageIconContainer" onMouseOver="tImageShowIcons()" onMouseOut="tImageHideIcons()">
+			<img src="transform-image/scale.png" class="tImageScale" onClick="tImageDoResize('start')" ondragstart="return false" onselectstart="return false">
+			<img src="transform-image/rotate.png" class="tImageRotate" onClick="tImageRotateImage()" ondragstart="return false" onselectstart="return false">
+			<img src="transform-image/flip-horizontal.png" class="tImageFlipHorizontal" onClick="tImageFlipImage('horizontal')" ondragstart="return false" onselectstart="return false">
+			<img src="transform-image/flip-vertical.png" class="tImageFlipVertical" onClick="tImageFlipImage('vertical')" ondragstart="return false" onselectstart="return false">
+		</span>
+	</span>
+	<span class="tImageTransMenuDataBG">Width: <span id="tImageWidthDisplay"></span>px &nbsp;&nbsp;&nbsp; Height: <span id="tImageHeightDisplay"></span>px</span>
+</span>
+
+<span class="tImageMessageContainer" id="tImageMessageContainer">
+	<span class="tImageTransMessageBG"></span>
+	<span class="tImageTransMessage">Click, or click & drag to resize image
+	</span>
+</span>
+
+<span class="tImageContainer" id="imageContainer" ondragstart="document.body.style.cursor='pointer'" onselectstart="document.body.style.cursor='pointer'">
+	<img src="gallery/DSCF0342.jpg" onMouseOver="tImageShowIcons()" onMouseOut="tImageHideIcons()" ondragstart="return false" onselectstart="return false" id="tImage" class="tImage">
+</span>
+
+<span class="tImageFormContainer">
+<form name="tImageForm" id="transformImage" action="#" method="POST" onSubmit="javascript:alert('The values in the black strip will be output, along with the image filename...\n\n'+document.tImageForm.tImageSrc.value+'\n\n...when you add an action attribute to the form');return false">
+<input type="hidden" name="tImageWidth" id="tImageWidth" value="0">
+<input type="hidden" name="tImageHeight" id="tImageHeight" value="0">
+<input type="hidden" name="tImageRotate" id="tImageRotate" value="0">
+<input type="hidden" name="tImageFlipX" id="tImageFlipX" value="0">
+<input type="hidden" name="tImageFlipY" id="tImageFlipY" value="0">
+<input type="hidden" name="tImageSrc" id="tImageSrc" value="0">
+<input type="submit" name="submit" value="Transform Image">
+</form>
+	<span class="tImageFormDataDisplay" id="formDataDisplay">Loading...</span>
+</span>
+
+</body>
+
+</html>
